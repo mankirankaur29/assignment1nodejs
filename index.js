@@ -120,13 +120,14 @@ server.del('/sendDelete/:id', function (req, res, next) {
 })
 
 
-//----------------deleting all users-------------------//
-server.del('/senddelete', function (req, res, next) {
+//----------------deleting all users--------------------------//
+server.del('/senddelete', function (req, res, next) 
+{
   
      // reset the given collection
      productsSave = require('save')('products')
   
-     // Send a 200 OK response
+     // Send a 200 OK response when all records are deleted
      res.send("All records deleted.");
  })
 
