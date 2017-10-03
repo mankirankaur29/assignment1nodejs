@@ -128,7 +128,7 @@ server.del('/senddelete', function (req, res, next)
      productsSave = require('save')('products')
   
      // Send a 200 OK response when all records are deleted
-     res.send("All records deleted.");
+     res.send("All records deleted.");// comment
  })
 
 
